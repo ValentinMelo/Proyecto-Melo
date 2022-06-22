@@ -97,6 +97,25 @@ a .logo {
     margin-top: 1%;
     margin-bottom: 2%;
     grid-area: foto1;
+    transition: all 0.8s ease-in-out;
+}
+
+.stevie-2{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    grid-area: foto1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.stevie:hover{   
+    opacity: 0;
+    transition: 0.5s ease-in-out;
 }
 
 .angus{
@@ -106,6 +125,26 @@ a .logo {
     margin-top: 1%;
     margin-bottom: 2%;
     grid-area: foto2;
+    transition: all 0.8s ease-in-out;
+}
+
+.angus-2{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    grid-area: foto2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 0.8s;
+}
+
+.angus:hover{   
+    opacity: 0;
+    transition: 0.5s ease-in-out;
 }
 
 .brian{
@@ -115,6 +154,26 @@ a .logo {
     margin-top: 1%;
     margin-bottom: 2%;
     grid-area: foto3;
+    transition: all 0.8s ease-in-out;
+}
+
+.brian-2{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    grid-area: foto3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 0.8s;
+}
+
+.brian:hover{   
+    opacity: 0;
+    transition: 0.5s ease-in-out;
 }
 
 .cliff{
@@ -124,6 +183,26 @@ a .logo {
     margin-top: 1%;
     margin-bottom: 2%;
     grid-area: foto4;
+    transition: all 0.8s ease-in-out;
+}
+
+.cliff-2{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    grid-area: foto4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 0.8s;
+}
+
+.cliff:hover{   
+    opacity: 0;
+    transition: 0.5s ease-in-out;
 }
 
 .phil{
@@ -133,6 +212,30 @@ a .logo {
     margin-top: 1%;
     margin-bottom: 2%;
     grid-area: foto5;
+    transition: all 0.8s ease-in-out;   
+}
+
+.phil-2{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    grid-area: foto5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 0.8s;
+}
+
+.phil:hover{   
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.integrantes div{
+    position: relative;
 }
 
 .integrantes__stevie{
