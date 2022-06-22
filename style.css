@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+
+a .logo {
+    display: flex;
+    object-fit: contain;
+    width: 15vw;
+    height: 15vh;
+    margin-top: 6%;
+    margin-bottom: 2%;   
+}
+
+
+.menu {
+    margin: 3.5%;
+}
+
+.menu__lista {
+    text-align: right;
+}
+
+.menu__lista a{
+    color: red;
+    font-weight: bold;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+.menu__lista li{
+    display: inline;
+    padding: 5px;
+}
+
+.portada{
+    display: flex;
+    object-fit: contain;
+    width: 100vw;
+    height: 100vh;
+}
+
+.integrantes{
+    display: grid;
+    grid-template-areas:
+        "titulo titulo titulo titulo titulo"
+        "foto1 foto2 foto3 foto4 foto5"
+        "nombre1 nombre2 nombre3 nombre4 nombre5"
+        "bio1 bio2 bio3 bio4 bio5";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px 1fr 20px 200px;
+    row-gap: 15px;
+    column-gap: 20px;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+    .integrantes{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 80px 130px auto auto;
+        row-gap: 5px;
+        column-gap: 7px;
+    }
+}
+.integrantes__titulo{
+    display: flex;
+    color: red;
+    font-weight: bold;
+    font-size: 200%;
+    justify-content: center;
+    align-items: center;
+    grid-area: titulo;
+}
+
+
+.stevie{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    grid-area: foto1;
+}
+
+.angus{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    grid-area: foto2;
+}
+
+.brian{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    grid-area: foto3;
+}
+
+.cliff{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    grid-area: foto4;
+}
+
+.phil{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    grid-area: foto5;
+}
+
+.integrantes__stevie{
+    font-weight: bold;
+    text-align: center;
+    font-size: 110%;
+    grid-area: nombre1;
+}
+
+.integrantes__angus{
+    font-weight: bold;
+    text-align: center;
+    font-size: 110%;
+    grid-area: nombre2;
+}
+
+.integrantes__brian{
+    font-weight: bold;
+    text-align: center;
+    font-size: 110%;
+    grid-area: nombre3;
+}
+
+.integrantes__cliff{
+    font-weight: bold;
+    text-align: center;
+    font-size: 110%;
+    grid-area: nombre4;
+}
+
+.integrantes__phil{
+    font-weight: bold;
+    text-align: center;
+    font-size: 110%;
+    grid-area: nombre5;
+}
+
+.integrantes__biostevie{
+    text-align: center;
+    grid-area: bio1;
+}
+
+.integrantes__bioangus{
+    text-align: center;
+    grid-area: bio2;
+}
+
+.integrantes__biobrian{
+    text-align: center;
+    grid-area: bio3;
+}
+
+.integrantes__biocliff{
+    text-align: center;
+    grid-area: bio4;
+}
+
+.integrantes__biophil{
+    text-align: center;
+    grid-area: bio5;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.copyright{
+    text-align: left;
+    font-size: 85%;
+}
+
+
+.redes__texto{
+    text-align: right;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+
+}
+
+.redes a img{
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    width: 5vw;
+    height: 5vh;
+}
+
+.videos{
+    display: grid;
+    grid-template-areas: 
+        "titulo video2"
+        "video1 video3";
+}
+
+.videos h1{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 50px;
+    grid-area: titulo;
+}
+
+.video1 {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    grid-area: video1;
+}
+
+.video2 {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    grid-area: video2;
+}
+
+.video3 {
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    grid-area: video3;
+}
+
+.discografía{
+    display: grid;
+    grid-template-areas: 
+        "titulo lista2"
+        "lista1 lista3";
+}
+
+.discografia h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 50px;
+    grid-area: titulo;
+}
+
+.lista1{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    grid-area: lista1;
+}
+
+.lista2{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    grid-area: lista2;
+}
+
+.lista3{
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    grid-area: lista3;
+}
+
+.contacto {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.contacto h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 50px;
+}
+
+.contacto form {
+    position: absolute;
+    top: 50%;
+}
+
