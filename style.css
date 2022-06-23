@@ -401,12 +401,12 @@ a .logo {
     grid-area: lista3;
 }
 
+/* css para la pagina de contacto */
+
 .contacto {
     display: flex;
     flex-wrap: wrap; 
 }
-
-/* css para la pagina de contacto */
 
 .contacto h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -421,5 +421,10 @@ a .logo {
 .contacto form {
     position: absolute;
     top: 50%;
+}
+
+.portada{
+    overflow: scroll;
+    width: 100%;
 }
 
