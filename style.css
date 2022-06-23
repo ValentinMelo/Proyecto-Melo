@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/* css para el header */
+
 header{
     display: flex;
     align-items: center;
@@ -47,12 +49,16 @@ a .logo {
     padding: 5px;
 }
 
+/* css para la imagen de portada de la pagina de inicio */
+
 .portada{
     display: flex;
     object-fit: contain;
     width: 100vw;
     height: 100vh;
 }
+
+/* css para la seccion con los integrantes de ACDC en la pagina de inicio */
 
 .integrantes{
     display: grid;
@@ -298,6 +304,7 @@ a .logo {
     grid-area: bio5;
 }
 
+/* footer general */
 
 footer{
     display: flex;
@@ -333,6 +340,8 @@ footer{
     width: 5vw;
     height: 5vh;
 }
+
+/* css especifico para la pagina de videos */
 
 .videos{
     display: grid;
@@ -373,6 +382,8 @@ footer{
     right: 5%;
     grid-area: video3;
 }
+
+/* css especifico para la pagina de discografia */
 
 .discografía{
     display: grid;
@@ -417,6 +428,8 @@ footer{
     display: flex;
     flex-wrap: wrap; 
 }
+
+/* css para la pagina de contacto */
 
 .contacto h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
