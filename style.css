@@ -318,6 +318,13 @@ a .logo {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+    .separador{
+        height: 200px;
+    }
+}
+
+
 /* css especifico para la pagina de videos */
 
 .videos{
