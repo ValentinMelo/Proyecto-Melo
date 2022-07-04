@@ -420,6 +420,132 @@ a .logo {
     grid-area: video3;
 }
 
+@media only screen and (max-width: 480px) {
+    
+    .portada{
+        display: none;
+    }
+
+    .videos{
+        background-image: url(Multimedia/Portada.jpg);
+        height: 600px;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .videos h1{
+        position: absolute;
+        top: 30%;
+        font-size: 30px;
+    }
+
+    .video1{
+        width: 110px;
+        height: 110px;
+    }
+
+    .video2{
+        width: 110px;
+        height: 110px;
+    }
+
+    .video3{
+        width: 110px;
+        height: 110px;
+    }
+
+    .discografia{
+        background-image: url(Multimedia/Portada.jpg);
+        height: 600px;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .discografia h1{
+        position: absolute;
+        top: 30%;
+        font-size: 25px;
+    }
+
+    .lista1{
+        width: 110px;
+        height: 110px;
+    }
+
+    .lista2{
+        width: 110px;
+        height: 110px;
+    }
+
+    .lista3{
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+
+    .portada{
+        display: none;
+    }
+
+    .videos{
+        background-image: url(Multimedia/Portada.jpg);
+        height: 600px;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .videos h1{
+        position: absolute;
+        top: 30%;
+        font-size: 40px;
+    }
+
+    .video1{
+        width: 200px;
+        height: 150px;
+    }
+
+    .video2{
+        width: 200px;
+        height: 150px;
+    }
+
+    .video3{
+        width: 200px;
+        height: 150px;
+    }
+
+    .discografia{
+        background-image: url(Multimedia/Portada.jpg);
+        height: 600px;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .discografia h1{
+        position: absolute;
+        top: 30%;
+        font-size: 30px;
+    }
+
+    .lista1{
+        width: 200px;
+        height: 150px;
+    }
+
+    .lista2{
+        width: 200px;
+        height: 150px;
+    }
+
+    .lista3{
+        width: 200px;
+        height: 150px;
+    }
+}
+
 /* css especifico para la pagina de discografia */
 
 .discografía{
