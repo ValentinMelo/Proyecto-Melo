@@ -1,0 +1,261 @@
+@import '../base/variables';
+
+/* css para la seccion con los integrantes de ACDC en la pagina de inicio */
+
+.integrantes{
+    display: grid;
+    grid-template-areas:
+        "titulo titulo titulo titulo titulo"
+        "foto1 foto2 foto3 foto4 foto5"
+        "nombre1 nombre2 nombre3 nombre4 nombre5"
+        "bio1 bio2 bio3 bio4 bio5";
+    grid-template-columns: repeat(5, 18%);
+    grid-template-rows: 100px 1fr 20px 300px;
+    justify-content: $alineacion;
+    row-gap: 15px;
+    column-gap: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    .integrantes__titulo{
+        display: flex;
+        color: $color-general;
+        font-weight: bold;
+        font-size: 200%;
+        justify-content: $alineacion;
+        align-items: $alineacion;
+        grid-area: titulo;
+    }
+
+    div{
+        position: relative;
+        .stevie{
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            grid-area: foto1;
+            transition: all 0.8s ease-in-out;
+        }
+        .stevie-2{
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            grid-area: foto1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+
+    .integrantes__stevie{
+        font-weight: bold;
+        text-align: center;
+        font-size: 110%;
+        grid-area: nombre1;
+    }
+
+    .integrantes__biostevie{
+        text-align: center;
+        grid-area: bio1;
+    }
+
+    div{
+        position: relative;
+        .angus{
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            grid-area: foto2;
+            transition: all 0.8s ease-in-out;
+        }
+        .angus-2{
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            grid-area: foto2;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            transition: all 0.8s;
+        }
+    }
+
+    .integrantes__angus{
+        font-weight: bold;
+        text-align: center;
+        font-size: 110%;
+        grid-area: nombre2;
+    }
+
+    .integrantes__bioangus{
+        text-align: center;
+        grid-area: bio2;
+    }
+
+    div{
+        position: relative;
+        .brian{
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            grid-area: foto3;
+            transition: all 0.8s ease-in-out;
+        }
+        .brian-2{
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            grid-area: foto3;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            transition: all 0.8s;
+        }
+    }
+
+    .integrantes__brian{
+        font-weight: bold;
+        text-align: center;
+        font-size: 110%;
+        grid-area: nombre3;
+    }
+
+    .integrantes__biobrian{
+        text-align: center;
+        grid-area: bio3;
+    }
+
+    div{
+        position: relative;
+        .cliff{
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            grid-area: foto4;
+            transition: all 0.8s ease-in-out;
+        }
+        .cliff-2{
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            grid-area: foto4;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            transition: all 0.8s;
+        }
+    }
+
+    .integrantes__cliff{
+        font-weight: bold;
+        text-align: center;
+        font-size: 110%;
+        grid-area: nombre4;
+    }
+
+    .integrantes__biocliff{
+        text-align: center;
+        grid-area: bio4;
+    }
+
+    div{
+        position: relative;
+        .phil{
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            grid-area: foto5;
+            transition: all 0.8s ease-in-out;  
+        }
+        .phil-2{
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            grid-area: foto5;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            transition: all 0.8s;
+        }
+    }
+
+    .integrantes__phil{
+        font-weight: bold;
+        text-align: center;
+        font-size: 110%;
+        grid-area: nombre5;
+    }
+
+    .integrantes__biophil{
+        text-align: center;
+        grid-area: bio5;
+    }
+
+}
+
+.stevie:hover,
+.angus:hover,
+.brian:hover,
+.cliff:hover,
+.phil:hover{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 480px) {
+    .integrantes{
+        grid-template-columns: repeat(5, 18%);
+        grid-template-rows: 80px 95px auto auto;
+        row-gap: 5px;
+        column-gap: 7px;
+    }
+
+    .integrantes__stevie,
+    .integrantes__angus,
+    .integrantes__brian,
+    .integrantes__cliff,
+    .integrantes__phil{
+        font-size: 90%;
+    }
+
+    .integrantes__biostevie,
+    .integrantes__bioangus,    
+    .integrantes__biobrian,
+    .integrantes__biocliff,
+    .integrantes__biophil{
+        font-size: 65%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+    .integrantes{
+        grid-template-rows: 80px auto auto 300px;   
+    }
+}

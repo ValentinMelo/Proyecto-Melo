@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import 'components/header';
+@import 'components/integrantes';
+@import 'components/footer';
+@import 'components/sass-generico';
+@import 'base/variables';
