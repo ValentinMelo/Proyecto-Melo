@@ -1,0 +1,28 @@
+@import '../base/variables';
+
+/* css para la pagina de contacto */
+
+.contacto {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.contacto h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 50px;
+}
+
+.contacto form {
+    position: absolute;
+    top: 50%;
+}
+
+.portada{
+    overflow: scroll;
+    width: 100%;
+}

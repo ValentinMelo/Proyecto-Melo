@@ -1,4 +1,6 @@
 @import '../base/variables';
+@import '../base/extend';
+@import '../base/mixin';
 
 /* css para la seccion con los integrantes de ACDC en la pagina de inicio */
 
@@ -32,11 +34,7 @@
     div{
         position: relative;
         .stevie{
-            object-fit: contain;
-            width: 100%;
-            height: auto;
-            margin-top: 1%;
-            margin-bottom: 2%;
+            @extend %fotos-integrantes;
             grid-area: foto1;
             transition: all 0.8s ease-in-out;
         }
@@ -69,11 +67,7 @@
     div{
         position: relative;
         .angus{
-            object-fit: contain;
-            width: 100%;
-            height: auto;
-            margin-top: 1%;
-            margin-bottom: 2%;
+            @extend %fotos-integrantes;
             grid-area: foto2;
             transition: all 0.8s ease-in-out;
         }
@@ -107,11 +101,7 @@
     div{
         position: relative;
         .brian{
-            object-fit: contain;
-            width: 100%;
-            height: auto;
-            margin-top: 1%;
-            margin-bottom: 2%;
+            @extend %fotos-integrantes;
             grid-area: foto3;
             transition: all 0.8s ease-in-out;
         }
@@ -145,11 +135,7 @@
     div{
         position: relative;
         .cliff{
-            object-fit: contain;
-            width: 100%;
-            height: auto;
-            margin-top: 1%;
-            margin-bottom: 2%;
+            @extend %fotos-integrantes;
             grid-area: foto4;
             transition: all 0.8s ease-in-out;
         }
@@ -183,11 +169,7 @@
     div{
         position: relative;
         .phil{
-            object-fit: contain;
-            width: 100%;
-            height: auto;
-            margin-top: 1%;
-            margin-bottom: 2%;
+            @extend %fotos-integrantes;
             grid-area: foto5;
             transition: all 0.8s ease-in-out;  
         }
@@ -242,7 +224,7 @@
     .integrantes__brian,
     .integrantes__cliff,
     .integrantes__phil{
-        font-size: 90%;
+        @include font(90%);
     }
 
     .integrantes__biostevie,
@@ -250,7 +232,7 @@
     .integrantes__biobrian,
     .integrantes__biocliff,
     .integrantes__biophil{
-        font-size: 65%;
+        @include font(65%);
     }
 }
 

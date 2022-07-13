@@ -1,0 +1,42 @@
+@import '../base/variables';
+
+/* css especifico para la pagina de discografia */
+
+.discografía{
+    display: grid;
+    grid-template-areas: 
+        "titulo lista2"
+        "lista1 lista3";
+}
+
+.discografia__h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 50px;
+    grid-area: titulo;
+}
+
+.lista1{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    grid-area: lista1;
+}
+
+.lista2{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    grid-area: lista2;
+}
+
+.lista3{
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    grid-area: lista3;
+}

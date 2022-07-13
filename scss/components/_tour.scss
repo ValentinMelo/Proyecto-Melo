@@ -1,0 +1,16 @@
+@import '../base/variables';
+
+/* css pagina tour */
+
+.container-bootstrap{
+    background-image: url(../Multimedia/Portada.jpg);
+    height: 750px;
+    overflow: hidden;
+    width: 100%; 
+}
+
+.container-bootstrap p{
+    font-size: 120%;
+    color: white;
+    font-weight: bold;
+}

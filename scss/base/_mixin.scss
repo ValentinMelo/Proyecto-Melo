@@ -1,0 +1,5 @@
+/* se utiliza en integrantes, en las media queries para determinar los font size */
+
+@mixin font($vacia) {
+    font-size: $vacia;
+}

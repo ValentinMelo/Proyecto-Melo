@@ -51,6 +51,16 @@ header nav ul li a {
   color: red;
 }
 
+/* se utiliza en components/_integrantes en las fotos de los integrantes */
+.integrantes div .phil, .integrantes div .cliff, .integrantes div .brian, .integrantes div .angus, .integrantes div .stevie {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+/* se utiliza en integrantes, en las media queries para determinar los font size */
 /* css para la seccion con los integrantes de ACDC en la pagina de inicio */
 .integrantes {
   display: grid;
@@ -78,11 +88,6 @@ header nav ul li a {
   position: relative;
 }
 .integrantes div .stevie {
-  object-fit: contain;
-  width: 100%;
-  height: auto;
-  margin-top: 1%;
-  margin-bottom: 2%;
   grid-area: foto1;
   transition: all 0.8s ease-in-out;
 }
@@ -112,11 +117,6 @@ header nav ul li a {
   position: relative;
 }
 .integrantes div .angus {
-  object-fit: contain;
-  width: 100%;
-  height: auto;
-  margin-top: 1%;
-  margin-bottom: 2%;
   grid-area: foto2;
   transition: all 0.8s ease-in-out;
 }
@@ -147,11 +147,6 @@ header nav ul li a {
   position: relative;
 }
 .integrantes div .brian {
-  object-fit: contain;
-  width: 100%;
-  height: auto;
-  margin-top: 1%;
-  margin-bottom: 2%;
   grid-area: foto3;
   transition: all 0.8s ease-in-out;
 }
@@ -182,11 +177,6 @@ header nav ul li a {
   position: relative;
 }
 .integrantes div .cliff {
-  object-fit: contain;
-  width: 100%;
-  height: auto;
-  margin-top: 1%;
-  margin-bottom: 2%;
   grid-area: foto4;
   transition: all 0.8s ease-in-out;
 }
@@ -217,11 +207,6 @@ header nav ul li a {
   position: relative;
 }
 .integrantes div .phil {
-  object-fit: contain;
-  width: 100%;
-  height: auto;
-  margin-top: 1%;
-  margin-bottom: 2%;
   grid-area: foto5;
   transition: all 0.8s ease-in-out;
 }
@@ -285,27 +270,7 @@ header nav ul li a {
     grid-template-rows: 80px auto auto 300px;
   }
 }
-/* separador */
-.separador {
-  height: 30px;
-}
-
-/* footer general */
-.text-muted img {
-  display: inline;
-  align-items: center;
-  justify-content: center;
-  object-fit: contain;
-  width: 5vw;
-  height: 5vh;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-@media only screen and (min-width: 481px) and (max-width: 960px) {
-  .separador {
-    height: 200px;
-  }
-}
+/* se utiliza este mapa en components/_video.scss */
 /* se utiliza este partial para agregar el resto del css de la página pero sin aplicar sass */
 /* css especifico para la pagina de videos */
 .videos {
@@ -360,15 +325,9 @@ header nav ul li a {
     top: 30%;
     font-size: 30px;
   }
-  .video1 {
-    width: 110px;
-    height: 110px;
-  }
-  .video2 {
-    width: 110px;
-    height: 110px;
-  }
-  .video3 {
+  .video1,
+.video2,
+.video3 {
     width: 110px;
     height: 110px;
   }
@@ -383,15 +342,9 @@ header nav ul li a {
     top: 30%;
     font-size: 25px;
   }
-  .lista1 {
-    width: 110px;
-    height: 110px;
-  }
-  .lista2 {
-    width: 110px;
-    height: 110px;
-  }
-  .lista3 {
+  .lista1,
+.lista2,
+.lista3 {
     width: 110px;
     height: 110px;
   }
@@ -411,15 +364,9 @@ header nav ul li a {
     top: 30%;
     font-size: 40px;
   }
-  .video1 {
-    width: 200px;
-    height: 150px;
-  }
-  .video2 {
-    width: 200px;
-    height: 150px;
-  }
-  .video3 {
+  .video1,
+.video2,
+.video3 {
     width: 200px;
     height: 150px;
   }
@@ -434,15 +381,9 @@ header nav ul li a {
     top: 30%;
     font-size: 30px;
   }
-  .lista1 {
-    width: 200px;
-    height: 150px;
-  }
-  .lista2 {
-    width: 200px;
-    height: 150px;
-  }
-  .lista3 {
+  .lista1,
+.lista2,
+.lista3 {
     width: 200px;
     height: 150px;
   }
@@ -524,5 +465,37 @@ header nav ul li a {
   color: white;
   font-weight: bold;
 }
+
+/* separador */
+.separador {
+  height: 30px;
+}
+
+/* footer general */
+.text-muted img {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  width: 5vw;
+  height: 5vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  .separador {
+    height: 200px;
+  }
+}
+/* se utiliza este mapa en components/_video.scss */ /* se utiliza en components/_integrantes en las fotos de los integrantes */
+.integrantes div .stevie, .integrantes div .angus, .integrantes div .brian, .integrantes div .cliff, .integrantes div .phil {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+/* se utiliza en integrantes, en las media queries para determinar los font size */
 
 /*# sourceMappingURL=style.css.map */

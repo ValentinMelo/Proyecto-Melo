@@ -1,0 +1,141 @@
+@import '../base/variables';
+@import '../base/mapa'; 
+
+/* se utiliza este partial para agregar el resto del css de la página pero sin aplicar sass */
+
+/* css especifico para la pagina de videos */
+
+.videos{
+    display: grid;
+    grid-template-areas: 
+        "titulo video2"
+        "video1 video3";
+}
+
+.videos h1{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 50px;
+    grid-area: titulo;
+}
+
+.video1 {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    grid-area: video1;
+}
+
+.video2 {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    grid-area: video2;
+}
+
+.video3 {
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    grid-area: video3;
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .portada{
+        display: none;
+    }
+
+    .videos{
+        background-image: map-get($standard, bg-standard);
+        height: 600px;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .videos h1{
+        position: absolute;
+        top: 30%;
+        font-size: 30px;
+    }
+
+    .video1,
+    .video2,
+    .video3{
+        width: map-get($standard, width-standard);
+        height: 110px;
+    }
+
+    .discografia{
+        background-image: map-get($standard, bg-standard);
+        height: 600px;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .discografia h1{
+        position: absolute;
+        top: 30%;
+        font-size: 25px;
+    }
+
+    .lista1,
+    .lista2,
+    .lista3{
+        width: map-get($standard, width-standard);
+        height: 110px;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+
+    .portada{
+        display: none;
+    }
+
+    .videos{
+        background-image: map-get($standard, bg-standard);
+        height: 600px;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .videos h1{
+        position: absolute;
+        top: 30%;
+        font-size: 40px;
+    }
+
+    .video1,
+    .video2,
+    .video3{
+        width: 200px;
+        height: 150px;
+    }
+
+    .discografia{
+        background-image: map-get($standard, bg-standard);
+        height: 600px;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .discografia h1{
+        position: absolute;
+        top: 30%;
+        font-size: 30px;
+    }
+
+    .lista1,
+    .lista2,
+    .lista3{
+        width: 200px;
+        height: 150px;
+    }
+}
