@@ -426,6 +426,7 @@ header nav ul li a {
   grid-area: lista3;
 }
 
+/* se utiliza este mapa en components/_video.scss */
 /* css para la pagina de contacto */
 .contacto {
   display: flex;
@@ -452,6 +453,46 @@ header nav ul li a {
   width: 100%;
 }
 
+@media only screen and (max-width: 480px) {
+  .portada {
+    display: none;
+  }
+  .contacto {
+    background-image: url(../Multimedia/Portada.jpg);
+    height: 600px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .contacto h1 {
+    position: absolute;
+    top: 30%;
+    font-size: 30px;
+  }
+  .contacto form {
+    width: 110px;
+    height: 110px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  .portada {
+    display: none;
+  }
+  .contacto {
+    background-image: url(../Multimedia/Portada.jpg);
+    height: 600px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .contacto h1 {
+    position: absolute;
+    top: 30%;
+    font-size: 40px;
+  }
+  .contacto form {
+    width: 200px;
+    height: 150px;
+  }
+}
 /* css pagina tour */
 .container-bootstrap {
   background-image: url(../Multimedia/Portada.jpg);
