@@ -55,7 +55,6 @@
     .integrantes__stevie{
         font-weight: bold;
         text-align: center;
-        font-size: 110%;
         grid-area: nombre1;
     }
 
@@ -89,7 +88,6 @@
     .integrantes__angus{
         font-weight: bold;
         text-align: center;
-        font-size: 110%;
         grid-area: nombre2;
     }
 
@@ -123,7 +121,6 @@
     .integrantes__brian{
         font-weight: bold;
         text-align: center;
-        font-size: 110%;
         grid-area: nombre3;
     }
 
@@ -157,7 +154,6 @@
     .integrantes__cliff{
         font-weight: bold;
         text-align: center;
-        font-size: 110%;
         grid-area: nombre4;
     }
 
@@ -191,7 +187,6 @@
     .integrantes__phil{
         font-weight: bold;
         text-align: center;
-        font-size: 110%;
         grid-area: nombre5;
     }
 
@@ -213,8 +208,8 @@
 
 @media only screen and (max-width: 480px) {
     .integrantes{
-        grid-template-columns: repeat(5, 18%);
-        grid-template-rows: 80px 95px auto auto;
+        grid-template-columns: repeat(5, 17%);
+        grid-template-rows: 80px auto auto auto;
         row-gap: 5px;
         column-gap: 7px;
     }
@@ -224,7 +219,7 @@
     .integrantes__brian,
     .integrantes__cliff,
     .integrantes__phil{
-        @include font(90%);
+        @include font(95%);
     }
 
     .integrantes__biostevie,
@@ -236,8 +231,8 @@
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 960px) {
+@media only screen and(min-width:481px) and (max-width: 960px) {
     .integrantes{
-        grid-template-rows: 80px auto auto 300px;   
+        grid-template-rows: 80px auto auto auto;
     }
 }

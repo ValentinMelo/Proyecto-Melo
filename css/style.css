@@ -196,7 +196,6 @@
 .integrantes .integrantes__stevie {
   font-weight: bold;
   text-align: center;
-  font-size: 110%;
   grid-area: nombre1;
 }
 .integrantes .integrantes__biostevie {
@@ -226,7 +225,6 @@
 .integrantes .integrantes__angus {
   font-weight: bold;
   text-align: center;
-  font-size: 110%;
   grid-area: nombre2;
 }
 .integrantes .integrantes__bioangus {
@@ -256,7 +254,6 @@
 .integrantes .integrantes__brian {
   font-weight: bold;
   text-align: center;
-  font-size: 110%;
   grid-area: nombre3;
 }
 .integrantes .integrantes__biobrian {
@@ -286,7 +283,6 @@
 .integrantes .integrantes__cliff {
   font-weight: bold;
   text-align: center;
-  font-size: 110%;
   grid-area: nombre4;
 }
 .integrantes .integrantes__biocliff {
@@ -316,7 +312,6 @@
 .integrantes .integrantes__phil {
   font-weight: bold;
   text-align: center;
-  font-size: 110%;
   grid-area: nombre5;
 }
 .integrantes .integrantes__biophil {
@@ -335,8 +330,8 @@
 
 @media only screen and (max-width: 480px) {
   .integrantes {
-    grid-template-columns: repeat(5, 18%);
-    grid-template-rows: 80px 95px auto auto;
+    grid-template-columns: repeat(5, 17%);
+    grid-template-rows: 80px auto auto auto;
     row-gap: 5px;
     column-gap: 7px;
   }
@@ -345,7 +340,7 @@
 .integrantes__brian,
 .integrantes__cliff,
 .integrantes__phil {
-    font-size: 90%;
+    font-size: 95%;
   }
   .integrantes__biostevie,
 .integrantes__bioangus,
@@ -357,7 +352,7 @@
 }
 @media only screen and (min-width: 481px) and (max-width: 960px) {
   .integrantes {
-    grid-template-rows: 80px auto auto 300px;
+    grid-template-rows: 80px auto auto auto;
   }
 }
 /* se utiliza este mapa en components/_video.scss */
@@ -613,9 +608,9 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-@media only screen and (min-width: 481px) and (max-width: 960px) {
+@media only screen and (max-width: 960px) {
   .separador {
-    height: 200px;
+    height: 100px;
   }
 }
 /* se utiliza este mapa en components/_video.scss */ /* se utiliza en components/_integrantes en las fotos de los integrantes */
