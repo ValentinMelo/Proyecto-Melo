@@ -14,7 +14,7 @@
     color: white;
     z-index: 1;
     position: absolute;
-    top: 50%;
+    top: 200px;
     left: 5%;
     font-size: 50px;
     grid-area: titulo;
@@ -22,21 +22,39 @@
 
 .lista1{
     position: absolute;
-    top: 80%;
+    top: 400px;
     left: 5%;
     grid-area: lista1;
 }
 
 .lista2{
     position: absolute;
-    top: 30%;
+    top: 200px;
     right: 5%;
     grid-area: lista2;
 }
 
 .lista3{
     position: absolute;
-    top: 80%;
+    top: 400px;
     right: 5%;
     grid-area: lista3;
+}
+
+@media only screen and (min-width: 1100px) {
+    .discografia__h1{
+        top: 200px;
+    }
+    
+    .lista1{
+        top: 500px;
+    }
+    
+    .lista2{
+        top: 200px;
+    }
+    
+    .lista3{
+        top: 500px;
+    }
 }

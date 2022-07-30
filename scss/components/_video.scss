@@ -18,7 +18,7 @@
     color: white;
     z-index: 1;
     position: absolute;
-    top: 50%;
+    top: 200px;
     left: 5%;
     font-size: 50px;
     grid-area: titulo;
@@ -26,21 +26,21 @@
 
 .video1 {
     position: absolute;
-    top: 80%;
+    top: 400px;
     left: 5%;
     grid-area: video1;
 }
 
 .video2 {
     position: absolute;
-    top: 30%;
+    top: 200px;
     right: 5%;
     grid-area: video2;
 }
 
 .video3 {
     position: absolute;
-    top: 80%;
+    top: 400px;
     right: 5%;
     grid-area: video3;
 }
@@ -137,5 +137,23 @@
     .lista3{
         width: 200px;
         height: 150px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .videos h1{
+        top: 200px;
+    }
+    
+    .video1{
+        top: 500px;
+    }
+    
+    .video2{
+        top: 200px;
+    }
+    
+    .video3{
+        top: 500px;
     }
 }
