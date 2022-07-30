@@ -13,20 +13,60 @@
     color: white;
     z-index: 1;
     position: absolute;
-    top: 50%;
+    top: 200px;
     left: 5%;
     font-size: 50px;
 }
 
-.contacto form {
-    position: absolute;
-    top: 50%;
-}
 
 .portada{
     overflow: scroll;
     width: 100%;
 }
+
+.contact {
+    padding: .8rem;
+    overflow: hidden;
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 200px;
+    right: 5%;
+  }
+  
+  .contact label, .contact input, .contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;   
+  }
+  
+  .contact label {
+    font-weight: 700;
+  }
+  
+  .contact input:not([type='submit']), .contact textarea {
+    border: none;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: gray;
+  }
+  
+  .contact textarea {
+    min-height: 100px;
+  }
+  
+  input[type='submit'] {
+    padding: 10px;
+    background: white;
+    border: none;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  
+  }
 
 @media only screen and (max-width: 480px) {
     
@@ -42,14 +82,19 @@
     }
     
     .contacto h1{
+        display: inline;
         position: absolute;
-        top: 30%;
+        top: 150px;
         font-size: 30px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
-    .contacto form{
-        width: map-get($standard, width-standard);
-        height: 110px;
+    .contact{
+        position: absolute;
+        top: 200px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
 }
@@ -70,11 +115,9 @@
     .contacto h1{
         position: absolute;
         top: 30%;
-        font-size: 40px;
+        font-size: 30px;
     }
 
-    .contacto form{
-        width: 200px;
-        height: 150px;
-    }
 }
+  
+
